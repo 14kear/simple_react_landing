@@ -36,7 +36,11 @@ jobs:
         run: |
           git config --global user.name "$user_name"
           git config --global user.email "$user_email"
-          git remote set-url origin https://${github_token}@github.com/${repository}
+          if [ -z "$github_token" ]; then
+            echo "ACTIONS_DEPLOY_ACCESS_TOKEN is not set"
+            exit 1
+          fi
+          git remote set-url origin https://x-access-token:${github_token}@github.com/${repository}.git
           npm run deploy
         env:
           user_name: github-actions[bot]
