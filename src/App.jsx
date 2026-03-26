@@ -36,7 +36,7 @@ function HomePage() {
   return (
     <Layout
       title="Hello World"
-      text="Basic React page for a university lab, ready to publish on GitHub Pages."
+      text="Basic React page for a university lab, ready to publish and verify on GitHub Pages."
     />
   );
 }
