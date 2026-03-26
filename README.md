@@ -24,3 +24,7 @@ npm run build
 3. В настройках GitHub открой `Settings -> Pages`.
 4. В `Source` выбери `GitHub Actions`.
 5. После пуша workflow из `.github/workflows/deploy.yml` соберёт и опубликует сайт.
+
+## Роуты
+
+Проект использует `HashRouter`, поэтому маршруты работают на GitHub Pages без дополнительной серверной настройки.
