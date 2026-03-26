@@ -33,6 +33,8 @@ function Layout({ title, text }) {
 }
 
 function HomePage() {
+  const test = 123;
+
   return (
     <Layout
       title="Hello World"
